@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --1: min(1px, 0.052083vw);
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  :root {
+    --1: min(1px, 0.059435vw);
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --1: min(1px, 0.2vw);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base resets or common FMDS utilities */
+* {
+  box-sizing: border-box;
+}
