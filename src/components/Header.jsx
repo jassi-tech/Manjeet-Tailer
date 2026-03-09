@@ -10,13 +10,13 @@ const Header = ({ onBookClick }) => {
             <FluidContainer className="h-s-120 flex items-center justify-between">
                 {/* LOGO */}
                 <div className="flex items-center gap-s-16 hover:opacity-80 transition-opacity cursor-pointer">
-                    <div className="bg-[#00a854] w-s-48 h-s-48 rounded-s-12 flex items-center justify-center shadow-lg shadow-green-100">
+                    <div className="bg-primary w-s-48 h-s-48 rounded-s-12 flex items-center justify-center shadow-lg shadow-primary-light">
                         <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" className="w-s-28 h-s-28">
                             <circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" />
                             <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
                         </svg>
                     </div>
-                    <span className="text-s-32 font-bold text-[#065f46] tracking-s-n1">{brand.logoText}</span>
+                    <span className="text-s-32 font-bold text-primary-deep tracking-s-n1">{brand.logoText}</span>
                 </div>
 
                 {/* NAVIGATION */}
@@ -26,10 +26,10 @@ const Header = ({ onBookClick }) => {
                             <li key={idx}>
                                 <a
                                     href={item.href}
-                                    className="text-s-18 font-medium text-slate-600 hover:text-[#00a854] transition-colors relative group"
+                                    className="text-s-18 font-medium text-slate-600 hover:text-primary transition-colors relative group"
                                 >
                                     {item.label}
-                                    <span className="absolute -bottom-s-8 left-0 w-0 h-s-2 bg-[#00a854] transition-all group-hover:w-full"></span>
+                                    <span className="absolute -bottom-s-8 left-0 w-0 h-s-2 bg-primary transition-all group-hover:w-full"></span>
                                 </a>
                             </li>
                         ))}
@@ -39,7 +39,7 @@ const Header = ({ onBookClick }) => {
                 {/* CTA BUTTON */}
                 <button
                     onClick={onBookClick}
-                    className="bg-[#065f46] text-white px-s-30 py-s-16 rounded-s-12 font-bold text-s-16 hover:bg-[#043d2e] transition-all shadow-lg shadow-slate-200"
+                    className="bg-primary-deep text-white px-s-30 py-s-16 rounded-s-12 font-bold text-s-16 hover:bg-primary-dark transition-all shadow-lg shadow-slate-200"
                 >
                     {brand.headerCTA}
                 </button>

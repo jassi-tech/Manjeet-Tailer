@@ -21,10 +21,10 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-s-120 bg-[#f0fdf4]">
+        <section id="contact" className="py-s-120 bg-primary-light">
             <FluidContainer>
                 <div className="text-center mb-s-80">
-                    <h2 className="text-s-48 font-bold text-[#065f46] mb-s-16">{contact.title}</h2>
+                    <h2 className="text-s-48 font-bold text-primary-deep mb-s-16">{contact.title}</h2>
                     <p className="text-s-18 text-slate-500">{contact.subtitle}</p>
                 </div>
 
@@ -48,15 +48,15 @@ const Contact = () => {
                     {/* Contact Information Card */}
                     <div className="flex-1 lg:max-w-s-500">
                         <div className="bg-white p-s-64 rounded-s-24 shadow-2xl shadow-black/5 flex flex-col gap-s-48">
-                            <h3 className="text-s-32 font-bold text-[#065f46]">{contact.infoTitle}</h3>
+                            <h3 className="text-s-32 font-bold text-primary-deep">{contact.infoTitle}</h3>
 
                             {contact.details.map((detail, idx) => (
                                 <div key={idx} className="flex gap-s-24 text-left">
-                                    <div className="w-s-56 h-s-56 bg-[#f0fdf4] rounded-s-12 flex items-center justify-center text-[#00a854] shrink-0">
+                                    <div className="w-s-56 h-s-56 bg-primary-light rounded-s-12 flex items-center justify-center text-primary shrink-0">
                                         {getIcon(detail.icon)}
                                     </div>
                                     <div>
-                                        <h4 className="text-s-20 font-bold text-[#065f46] mb-s-4">{detail.label}</h4>
+                                        <h4 className="text-s-20 font-bold text-primary-deep mb-s-4">{detail.label}</h4>
                                         <p className="text-s-16 text-slate-500 leading-s-24">{detail.value}</p>
                                     </div>
                                 </div>

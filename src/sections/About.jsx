@@ -9,7 +9,7 @@ const About = () => {
         <section id="about" className="py-s-120">
             <FluidContainer>
                 <div className="text-center mb-s-80">
-                    <h2 className="text-s-48 font-bold text-[#065f46] mb-s-24">{about.title}</h2>
+                    <h2 className="text-s-48 font-bold text-primary-deep mb-s-24">{about.title}</h2>
                     <p className="text-s-18 text-slate-500 max-w-s-800 mx-auto leading-s-28">
                         {about.subtitle}
                     </p>

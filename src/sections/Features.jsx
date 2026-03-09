@@ -20,7 +20,7 @@ const Features = () => {
     };
 
     return (
-        <section className="py-s-80 bg-green-50/30">
+        <section className="py-s-80 bg-primary-light/30">
             <FluidContainer className="flex flex-col md:flex-row gap-s-40">
                 {features.map((feature, idx) => (
                     <FeatureCard

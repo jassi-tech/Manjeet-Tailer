@@ -19,14 +19,14 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-[#064e3b] pt-s-120 pb-s-40 text-white">
+        <footer className="bg-primary-deep pt-s-120 pb-s-40 text-white">
             <FluidContainer>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-s-80 mb-s-80 border-b-s-1 border-white/10 pb-s-80 text-left">
                     {/* Brand Column */}
                     <div className="flex flex-col gap-s-32">
                         <div className="flex items-center gap-s-16">
                             <div className="bg-white w-s-48 h-s-48 rounded-s-12 flex items-center justify-center shrink-0">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="#00a854" strokeWidth="3" className="w-s-24 h-s-24">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="3" className="w-s-24 h-s-24">
                                     <circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" />
                                     <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
                                 </svg>

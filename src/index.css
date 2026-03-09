@@ -4,6 +4,10 @@
 
 :root {
   --1: min(1px, 0.052083vw);
+  --primary: #C25D5D;
+  --primary-dark: #8B3E3E;
+  --primary-deep: #6B2A2A;
+  --primary-light: #FDF2F2;
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {

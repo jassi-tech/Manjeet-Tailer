@@ -22,10 +22,10 @@ const Services = () => {
     };
 
     return (
-        <section id="services" className="py-s-120 bg-[#f0fdf4]">
+        <section id="services" className="py-s-120 bg-primary-light">
             <FluidContainer>
                 <div className="text-center mb-s-80">
-                    <h2 className="text-s-48 font-bold text-[#065f46] mb-s-24">{services.title}</h2>
+                    <h2 className="text-s-48 font-bold text-primary-deep mb-s-24">{services.title}</h2>
                     <p className="text-s-18 text-slate-500 max-w-s-800 mx-auto leading-s-28 text-center">
                         {services.description}
                     </p>
@@ -45,11 +45,11 @@ const Services = () => {
                 {/* Combined Why Choose Us & Our Process Card */}
                 <div className="bg-white p-s-50 rounded-s-24 shadow-2xl shadow-black/5 flex flex-col md:flex-row gap-s-80 md:gap-s-120">
                     <div className="flex-1">
-                        <h2 className="text-s-36 font-bold text-[#065f46] mb-s-40">{services.whyChooseUs.title}</h2>
+                        <h2 className="text-s-36 font-bold text-primary-deep mb-s-40">{services.whyChooseUs.title}</h2>
                         <div className="flex flex-col gap-s-24">
                             {services.whyChooseUs.items.map((text, i) => (
                                 <div key={i} className="flex gap-s-16 items-start">
-                                    <svg className="w-s-20 h-s-20 text-[#22c55e] mt-s-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
+                                    <svg className="w-s-20 h-s-20 text-primary mt-s-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                     </svg>
                                     <span className="text-s-18 font-medium text-slate-600 leading-s-28">{text}</span>
@@ -59,11 +59,11 @@ const Services = () => {
                     </div>
 
                     <div className="flex-1">
-                        <h2 className="text-s-36 font-bold text-[#065f46] mb-s-40">{services.process.title}</h2>
+                        <h2 className="text-s-36 font-bold text-primary-deep mb-s-40">{services.process.title}</h2>
                         <div className="flex flex-col gap-s-24">
                             {services.process.items.map((text, i) => (
                                 <div key={i} className="flex gap-s-24 items-center">
-                                    <div className="w-s-32 h-s-32 rounded-full bg-[#00a854] flex items-center justify-center text-white font-bold text-s-18 shrink-0">
+                                    <div className="w-s-32 h-s-32 rounded-full bg-primary flex items-center justify-center text-white font-bold text-s-18 shrink-0">
                                         {i + 1}
                                     </div>
                                     <span className="text-s-18 font-medium text-slate-600">{text}</span>

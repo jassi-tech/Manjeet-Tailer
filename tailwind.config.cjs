@@ -38,6 +38,12 @@ module.exports = {
       letterSpacing: fmdsScale,
       lineHeight: fmdsScale,
       // Custom breakpoints to ensure they work with FMDS logic
+      colors: {
+        'primary': 'var(--primary)',
+        'primary-dark': 'var(--primary-dark)',
+        'primary-deep': 'var(--primary-deep)',
+        'primary-light': 'var(--primary-light)',
+      },
       screens: {
         'sm': '640px',
         'md': '768px',
