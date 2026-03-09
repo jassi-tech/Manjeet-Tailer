@@ -2,6 +2,13 @@ import React from 'react';
 import FluidContainer from '../components/FluidContainer';
 import ServiceCard from '../components/ServiceCard';
 import { SITE_CONTENT } from '../constants/content';
+import {
+    ClothingIcon,
+    RepairsIcon,
+    RulerIcon,
+    WeddingIcon,
+    CheckIcon
+} from '../components/Icons';
 
 const Services = () => {
     const { services } = SITE_CONTENT;
@@ -9,13 +16,13 @@ const Services = () => {
     const getIcon = (type) => {
         switch (type) {
             case 'clothing':
-                return <svg className="w-s-24 h-s-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>;
+                return <ClothingIcon />;
             case 'repairs':
-                return <svg className="w-s-24 h-s-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758L5 19m0-14l4.121 4.121" /></svg>;
+                return <RepairsIcon />;
             case 'ruler':
-                return <svg className="w-s-24 h-s-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>;
+                return <RulerIcon />;
             case 'wedding':
-                return <svg className="w-s-24 h-s-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z" /></svg>;
+                return <WeddingIcon />;
             default:
                 return null;
         }
@@ -49,9 +56,7 @@ const Services = () => {
                         <div className="flex flex-col gap-s-24">
                             {services.whyChooseUs.items.map((text, i) => (
                                 <div key={i} className="flex gap-s-16 items-start">
-                                    <svg className="w-s-20 h-s-20 text-primary mt-s-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                    </svg>
+                                    <CheckIcon />
                                     <span className="text-s-18 font-medium text-slate-600 leading-s-28">{text}</span>
                                 </div>
                             ))}

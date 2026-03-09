@@ -1,6 +1,7 @@
 import React from 'react';
 import FluidContainer from './FluidContainer';
 import { SITE_CONTENT } from '../constants/content';
+import { LogoIcon } from './Icons';
 
 const Header = ({ onBookClick }) => {
     const { brand, navigation } = SITE_CONTENT;
@@ -11,10 +12,7 @@ const Header = ({ onBookClick }) => {
                 {/* LOGO */}
                 <div className="flex items-center gap-s-16 hover:opacity-80 transition-opacity cursor-pointer">
                     <div className="bg-primary w-s-48 h-s-48 rounded-s-12 flex items-center justify-center shadow-lg shadow-primary-light">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" className="w-s-28 h-s-28">
-                            <circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" />
-                            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
-                        </svg>
+                        <LogoIcon stroke="white" />
                     </div>
                     <span className="text-s-32 font-bold text-primary-deep tracking-s-n1">{brand.logoText}</span>
                 </div>

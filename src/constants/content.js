@@ -1,8 +1,8 @@
 export const SITE_CONTENT = {
   brand: {
-    name: "Manjeet Tailer",
+    name: "Manjeet Boutique",
     tagline: "Premium tailoring services with expert craftsmanship and attention to detail.",
-    logoText: "Manjeet Tailer",
+    logoText: "Manjeet Boutique",
     headerCTA: "Book Now",
   },
   navigation: [
@@ -14,18 +14,18 @@ export const SITE_CONTENT = {
   ],
   hero: {
     title: "Premium Tailoring Services",
-    description: "At Manjeet Tailer, we bring your fashion vision to life with expert craftsmanship and attention to detail. From custom suits to alterations, we've got you covered.",
+    description: "At Manjeet Boutique, we bring your fashion vision to life with expert craftsmanship and attention to detail. From custom suits to alterations, we've got you covered.",
     primaryCTA: "Our Services",
     secondaryCTA: "Contact Us",
     // Backend image simulation: images will be fetched in component
     // image: null, 
   },
   about: {
-    title: "About Manjeet Tailer",
+    title: "About Manjeet Boutique",
     subtitle: "A tradition of excellence in tailoring, serving our community with passion and dedication.",
     image: "https://images.unsplash.com/photo-1551524344-93ad9199d30c?auto=format&fit=crop&q=80&w=1200",
     paragraphs: [
-      "Welcome to Manjeet Tailer, where tradition meets modern fashion. For over a decade, we've been crafting custom garments that reflect your unique style and personality.",
+      "Welcome to Manjeet Boutique, where tradition meets modern fashion. For over a decade, we've been crafting custom garments that reflect your unique style and personality.",
       "Our team of skilled tailors brings years of experience and expertise to every project. Whether you need a custom suit for a special occasion or simple alterations to your favorite garment, we handle each piece with the utmost care and professionalism.",
       "We believe that everyone deserves to look and feel their best. That's why we take the time to understand your needs and deliver results that exceed your expectations.",
     ],
@@ -109,17 +109,17 @@ export const SITE_CONTENT = {
     details: [
       {
         label: "Visit Us",
-        value: "Manjeet Tailer, Bilaspur Park, Haryana, India",
+        value: "Manjeet Boutique, Bilaspur Park, Haryana, India",
         icon: "location",
       },
       {
         label: "Call Us",
-        value: "9878850321",
+        value: "9728820566",
         icon: "phone",
       },
       {
         label: "Email Us",
-        value: "Manjeet Tailer@gmail.com",
+        value: "Manjeetboutique566@gmail.com",
         icon: "email",
       },
       {
@@ -160,7 +160,7 @@ export const SITE_CONTENT = {
         followText: "Follow us for style tips and updates!",
       },
     ],
-    copyright: "© 2025 Manjeet Tailer. All rights reserved.",
+    copyright: "© 2025 Manjeet Boutique. All rights reserved.",
     designer: {
       text: "Design by Jasleen Singh",
       url: "https://jasleen-singh.vercel.app/"
